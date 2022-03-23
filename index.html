@@ -1,7 +1,46 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Garrison Shoemake | Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
     <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
+        <header>
+            <ul>
+                <li><a href="https://github.com/Garrison-Shoemake">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/garrison-shoemake/">LinkedIn</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="bg.jpg" id="bg">
+            <img src="moon.png" id="moon">
+            <img src="mountain.png" id="mountain">
+            <h2 id="text">Garrison Shoemake</h2>
+        </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * .5 + 'px';
+                moon.style.left = -value * 0.5 + 'px';
+                text.style.top = value * 1.15 + 'px';
+            })
+        </script>
+        <div class="aboutme">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod distinctio non accusantium, consequuntur molestiae temporibus totam delectus nisi recusandae laboriosam neque odit veniam blanditiis modi tempora ut at alias inventore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptate sapiente commodi! Nesciunt quidem inventore aspernatur deserunt, voluptatum hic voluptas blanditiis, dicta placeat architecto a magnam earum, dignissimos numquam repellendus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo ad similique maiores, laboriosam aspernatur at magni sit ducimus ea rem porro placeat quibusdam, cum eveniet pariatur, dicta praesentium doloribus?
+            </p>
+        </div>
+        <div class="Portfolio">
+            <h2>Portfolio</h2>
+        </div>
     </body>
+    
 </html>
