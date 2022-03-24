@@ -9,7 +9,9 @@
 body
 {
     background: #0b263b;
-    min-height: 1500px;
+    min-height: 2500px;
+    width: 100%;
+    overflow-x: hidden;
 }
 header
 {
@@ -103,16 +105,104 @@ section img
 {
     position: relative;
     padding: 100px;
+    left: 20px;
     background: #0b263b;
+    top: 20px;
+    
 }
 .aboutme h2
 {
     font-size: 3.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #ffffff;
+    text-decoration: underline;
 }
 .aboutme p
 {
     color: #ffffff;
     font-size: 1em;
+}
+.portfolio
+{
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+.portfolio h2
+{
+    font-size: 3.5em;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+    position: sticky;
+    top: 0;
+    background: #0b263b;
+    z-index: 1;
+}
+.portfolio p
+{
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 1em;
+}
+#pfp
+{ 
+    position: relative;
+    top: 80px;
+    width: 13%;
+    height: auto;
+    border-radius: 65%;
+    border: 1px solid white;
+    z-index: 10000000;
+    float: left;
+    left: 10px;
+}
+#escape_room
+{
+    position: relative;
+    top: 0;
+    left: 10px;
+    height: auto;
+    width: 37.5%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 65%;
+}
+.escape_room_header
+{
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.portfolio ul
+{
+    margin-top: 30px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio ul li 
+{
+    list-style: none;
+    z-index: 100000;
+    color: #ffffff;
+}
+.portfolio ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.portfolio ul li a:hover
+{
+    background: #ffffff;
+    color: #0b263b;
 }
